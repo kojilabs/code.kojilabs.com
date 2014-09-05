@@ -10,39 +10,39 @@ The Geolocation API makes it really easy to get the location of a device using J
 
 Supporting browsers will expose a `geolocation` interface on the `navigator` object. This interface has a `getCurrentPosition()` method with a success callback that will receive a [`Position`](http://www.w3.org/TR/geolocation-API/#position_interface) interface.  
 
-```js
+{% highlight js %}
 navigator.geolocation.getCurrentPosition(success, error, options);
-```
+{% endhighlight %}
 
 The latitude and longitude coordinates can be accessed from the `Position` interface like so:
 
-```js
+{% highlight js %}
 navigator.geolocation.getCurrentPosition(function(position) {  
-	// Get the positioning coordinates.  
-	var lat = position.coords.latitude;  
-	var lon = position.coords.longitude;  
+  // Get the positioning coordinates.  
+  var lat = position.coords.latitude;  
+  var lon = position.coords.longitude;  
 
-	// Do something magical...  
+  // Do something magical...  
 }, function() {  
-	alert('Oops! An error occured.');  
+  alert('Oops! An error occured.');  
 });
-```
+{% endhighlight %}
 
 You can also watch for location changes using the `watchPosition()` method.
 
-```js
+{% highlight js %}
 navigator.geolocation.watchPosition(success, error, options);
-```
+{% endhighlight %}
 
 The `options` object can be used to specify the accuracy of the data, a timeout threshold, and the maxage of cached location data.
 
-```js
+{% highlight js %}
 var options = {
-	enableHighAccuracy: true,
-	maximumAge : 60000,
-	timeout : 45000
+  enableHighAccuracy: true,
+  maximumAge : 60000,
+  timeout : 45000
 };
-```
+{% endhighlight %}
 
 ## FYI
 

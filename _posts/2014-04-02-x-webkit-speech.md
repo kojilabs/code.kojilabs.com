@@ -12,9 +12,9 @@ Adding the `x-webkit-speech` attribute to your `input` elements will enabled voi
 
 ![](http://postachio-images.s3-website-us-east-1.amazonaws.com/4e993fc4b5c88cd33375265a094c786c/623d1a53297b693da8ed89c58e4a0d61/w600_225c100b86bfeaddd0aad5247d93bd86.png)
 
-```html
+{% highlight js %}
 <input type="text" x-webkit-speech>
-```
+{% endhighlight %}
 
 Chrome is the only browser that supports this right now.
 

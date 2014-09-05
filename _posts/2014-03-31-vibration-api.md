@@ -10,15 +10,15 @@ Harness the device's vibration motor using the `vibrate()` method, accessible on
 
 Simply pass in the number of milliseconds you want the vibration to last.  
 
-```js
+{% highlight js %}
 navigator.vibrate(1000);
-```
+{% endhighlight %}
 
 You can also specify an array of values. Every other value will be interpreted as a pause.
 
-```js
+{% highlight js %}
 navigator.vibrate([1000, 500, 1000]);
-```
+{% endhighlight %}
 
 For this example the device would vibrate for one second (1000 milliseconds), pause for half a second, and then vibrate for one more second.  
 
