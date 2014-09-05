@@ -4,13 +4,12 @@ email: matt@codestix.com
 description: Quick tips for busy developers
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://codestix.com" # the base hostname & protocol for your site
-twitter_username: mattantwest
-github_username:  matt-west
+twitter_username: codestix
+github_username:  codestix
 
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
-  use_coderay: true
-  coderay:
-    coderay_line_numbers: nil
+
+highlighter: pygments

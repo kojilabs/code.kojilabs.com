@@ -8,4 +8,4 @@ CodeStix is a collection of super-quick tutorials that cover how to use front-en
 
 If you’re after more in-depth articles, check out my posts over on the [Treehouse Blog](http://blog.teamtreehouse.com/author/mattwest).
 
-~ Matt
+— Matt ([@MattAntWest](https://twitter.com/MattAntWest))
