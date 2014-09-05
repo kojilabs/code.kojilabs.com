@@ -5,10 +5,15 @@
   background: $grey-color-dark;
   color: #FFF;
   /* border-bottom: 1px solid \\\$grey-color-light; */
-  min-height: 56px;
+  height: 56px;
+  overflow: hidden;
 
   // Positioning context for the mobile navigation icon
   position: relative;
+
+  @include media-query($on-palm) {
+    overflow: visible;
+  }
 }
 
 .site-title {
@@ -17,6 +22,7 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  display: block;
 
   &,
   &:visited {
@@ -27,12 +33,13 @@
   &:focus {
     color: $yellow;
     text-decoration: none;
-    }
+  }
 }
 
 .site-logo {
   height: 56px;
   margin-right: 10px;
+  vertical-align: top;
 }
 
 .site-nav {
