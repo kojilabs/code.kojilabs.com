@@ -22,9 +22,25 @@
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
-      </div>
-    </nav>
 
+        <div class="site-search">
+          <script>
+            (function() {
+              var cx = '002639891461606153282:l8iimxj7hh4';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                  '//www.google.com/cse/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search linktarget="_self"></gcse:search>
+        </div>
+      </div>
+
+    </nav>
   </div>
 
 </header>

@@ -37,26 +37,60 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
 
     .menu-icon {
-        display: none;
+      display: none;
     }
 
     .page-link {
-        color: #FFF;
-        line-height: $base-line-height;
+      line-height: 56px;
+      color: #FFF;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
+      // Gaps between nav items, but not on the first one
+      &:not(:first-child) {
+          margin-left: 20px;
+      }
 
-        &:hover,
-        &:focus {
-          color: $yellow;
-          text-decoration: none;
-        }
+      &:hover,
+      &:focus {
+        color: $yellow;
+        text-decoration: none;
+      }
+    }
+
+    .site-search {
+      width: 200px;
+      float: right;
+      padding-top: 16px;
+      padding-left: 1.5em;
+
+      .gsc-control-cse {
+        background: transparent;
+        border: 0;
+        padding: 0
+      }
+
+      .gsc-input-box {
+        background: #FFF;
+        border-radius: 2px;
+        border: 0;
+        padding: 0;
+      }
+
+      .gsib_a {
+        padding: 4px 5px 6px 5px;
+      }
+
+
+      .gsc-search-button {
+        display: none;
+      }
+
+      .gsc-input {
+        font-family: \\\\$base-font-family;
+        -webkit-font-smoothing: antialiased;
+        padding-right: 0 !important;
+      }
     }
 
     @include media-query($on-palm) {
@@ -65,7 +99,7 @@
         right: 30px;
         background-color: $grey-color-dark;
         border: 1px solid #333;
-        border-radius: 5px;
+        border-radius: 3px;
         text-align: right;
 
         .menu-icon {
@@ -100,10 +134,16 @@
         .page-link {
           display: block;
           padding: 5px 10px;
+          line-height: $base-line-height;
+        }
+
+        .site-search {
+          width: 200px;
+          float: none;
+          padding: 12px 10px 2px;
         }
     }
 }
-
 
 
 /**
@@ -188,30 +228,30 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+  padding: $spacing-unit 0;
 }
 
 .page-heading {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .post-list {
-    margin-left: 0;
-    list-style: none;
+  margin-left: 0;
+  list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+  > li {
+    margin-bottom: $spacing-unit;
+  }
 }
 
 .post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+  font-size: $small-font-size;
+  color: $grey-color;
 }
 
 .post-link {
-    display: block;
-    font-size: 24px;
+  display: block;
+  font-size: 1.2em;
 }
 
 
