@@ -36,6 +36,12 @@ ul, ol, dl, figure,
 }
 
 
+p,
+li {
+  line-height: 1.6;
+}
+
+
 
 /**
  * Images
@@ -91,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $brand-color;
   text-decoration: none;
+  transition: color 200ms ease-in-out;
 
   &:visited {
     /* color: darken(\$brand-color, 15%); */
@@ -186,8 +193,6 @@ pre {
         clear: both;
     }
 }
-
-
 
 /**
  * Icons

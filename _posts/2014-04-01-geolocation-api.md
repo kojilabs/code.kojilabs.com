@@ -24,7 +24,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
 
   // Do something magical...  
 }, function() {  
-  alert('Oops! An error occured.');  
+  alert('Oops! An error occurred.');  
 });
 ```
 

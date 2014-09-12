@@ -112,8 +112,8 @@
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $grey-color-dark;
-        border: 1px solid #333;
+        background-color: #252525;
+        border: 1px solid rgba(255,255,255,0.05);
         border-radius: 3px;
         text-align: right;
 
@@ -272,9 +272,17 @@
     background: #FFF;
     outline: 1px solid #ededed;
 
+    @include media-query($on-palm) {
+      padding: $spacing-unit;
+    }
+
     &.listing-page {
       padding: 0;
     }
+  }
+
+  @include media-query($on-palm) {
+    padding: 0;
   }
 }
 
@@ -325,6 +333,7 @@
   > li {
     padding: $spacing-unit;
     border-top: 1px solid $grey-color-light;
+    transition: background 200ms ease-in-out;
 
     a,
     a:visited {
@@ -419,6 +428,7 @@
   font-weight: 600;
   font-size: 1.2em;
   text-align: center;
+  margin-top: $spacing-unit*2;
 
   span {
     vertical-align: middle;
