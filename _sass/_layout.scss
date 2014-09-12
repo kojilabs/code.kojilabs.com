@@ -254,6 +254,36 @@
 }
 
 
+/**
+ * Treehouse Ads
+ */
+.treehouse-ad {
+  text-align: center;
+  /* border-top: 1px solid \$grey-color-light; */
+  line-height: 0;
+
+  /* max-width: -webkit-calc(#{\$page-width} - (#{\$spacing-unit} * 2));
+  max-width:         calc(#{\$page-width} - (#{\$spacing-unit} * 2)); */
+
+  margin-top: $spacing-unit;
+  /* margin: 0 auto; */
+
+  a {
+    display: inline-block;
+    background: #5FCF80;
+    padding: 0.25em 1.25em;
+    border-radius: 5px;
+    transition: background 200ms ease-in-out;
+    border-bottom: 4px solid rgba(0,0,0,0.15);
+
+    &:hover,
+    &:focus {
+      background: #47535b;
+    }
+  }
+}
+
+
 
 /**
  * Page content
@@ -320,7 +350,7 @@
 }
 
 .post-list {
-  margin-left: 0;
+  margin: 0;
   list-style: none;
 
   h2 {
