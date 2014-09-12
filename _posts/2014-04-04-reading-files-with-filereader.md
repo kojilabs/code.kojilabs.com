@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reading Files with FileReader"
-author: "Matt West"
+author: mattwest
 date:   2014-04-04 12:00:00
 tags: JavaScript
 ---
@@ -21,7 +21,7 @@ This is an asynchronous API so make sure that you declare your `onload` handler 
 
 ## readAsText
 
-{% highlight js %}
+```js
 var reader = new FileReader();
 
 reader.onload = function(e) {
@@ -29,11 +29,11 @@ reader.onload = function(e) {
 }
 
 reader.readAsText(file, encoding);
-{% endhighlight %}
+```
 
 ## readAsDataURL
 
-{% highlight js %}
+```js
 var reader = new FileReader();
 
 reader.onload = function(e) {
@@ -41,12 +41,12 @@ reader.onload = function(e) {
 }
 
 reader.readAsDataURL(file);
-{% endhighlight %}
+```
 
 
 ## readAsBinaryString
 
-{% highlight js %}
+```js
 var reader = new FileReader();
 
 reader.onload = function(e) {
@@ -54,12 +54,12 @@ reader.onload = function(e) {
 }
 
 reader.readAsBinaryString(file);
-{% endhighlight %}
+```
 
 
 ## readAsArrayBuffer
 
-{% highlight js %}
+```js
 var reader = new FileReader();
 
 reader.onload = function(e) {
@@ -67,13 +67,13 @@ reader.onload = function(e) {
 }
 
 reader.readAsArrayBuffer(file);
-{% endhighlight %}
+```
 
 
 ## Abort File Reads
 
 The `abort()` method can be used to stop a file read. This is handy if you're dealing with large files.
 
-{% highlight js %}
+```js
 reader.abort();
-{% endhighlight %}
+```

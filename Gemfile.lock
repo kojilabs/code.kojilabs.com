@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coderay (1.1.0)
+    jekyll-tagging (0.6.0)
+      ruby-nuggets
+    nuggets (1.0.0)
+    ruby-nuggets (1.0.0)
+      nuggets (= 1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  coderay
+  jekyll-tagging

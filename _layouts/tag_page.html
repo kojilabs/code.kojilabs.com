@@ -1,13 +1,11 @@
 ---
 layout: default
 ---
-
-<div class="home listing-page">
-
-  <h1 class="page-heading">Latest Posts</h1>
+<div class="tag-page listing-page">
+  <h1 class="page-heading">Posts tagged '{{ page.tag }}'</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in page.posts %}
       {% assign author = site.authors[post.author] %}
       <li>
         <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
@@ -15,5 +13,4 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
 </div>

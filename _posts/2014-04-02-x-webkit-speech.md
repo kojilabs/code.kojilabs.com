@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Voice Input with x-webkit-speech"
-author: "Matt West"
+author: mattwest
 date:   2014-04-02 12:00:00
 tags: HTML
 ---
@@ -12,9 +12,9 @@ Adding the `x-webkit-speech` attribute to your `input` elements will enabled voi
 
 ![Voice Input Demo](/img/voice-input-demo.png)
 
-{% highlight js %}
+```js
 <input type="text" x-webkit-speech>
-{% endhighlight %}
+```
 
 Chrome is the only browser that supports this right now.
 

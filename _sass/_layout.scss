@@ -2,11 +2,11 @@
  * Site header
  */
 .site-header {
-  background: $grey-color-dark;
-  color: #FFF;
-  /* border-bottom: 1px solid \\\$grey-color-light; */
+  background: #161616;
+  /* outline: 1px solid #E6E6E6; */
   height: 56px;
   overflow: hidden;
+  color: #FFF;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -19,25 +19,30 @@
 .site-title {
   font-size: 26px;
   line-height: 56px;
-  letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
   display: block;
+  font-weight: 600;
 
   &,
   &:visited {
     color: #FFF;
+
+    span {
+      color: $grey-color;
+    }
   }
 
   &:hover,
   &:focus {
-    color: $yellow;
+    color: $green;
     text-decoration: none;
   }
 }
 
 .site-logo {
   height: 56px;
+  background: $brand-purple;
   margin-right: 10px;
   vertical-align: top;
 }
@@ -52,6 +57,9 @@
     .page-link {
       line-height: 56px;
       color: #FFF;
+      font-size: 0.8em;
+      font-weight: 600;
+      text-transform: uppercase;
 
       // Gaps between nav items, but not on the first one
       &:not(:first-child) {
@@ -60,7 +68,7 @@
 
       &:hover,
       &:focus {
-        color: $yellow;
+        color: $green;
         text-decoration: none;
       }
     }
@@ -159,6 +167,18 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background: #FFF;
+
+    a,
+    a:visited {
+      color: $grey-color;
+      font-weight: 600;
+
+      &:hover,
+      &:focus {
+        color: $green;
+      }
+    }
 }
 
 .footer-heading {
@@ -170,6 +190,10 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+
+    strong {
+      color: $green;
+    }
 }
 
 .footer-col-wrapper {
@@ -236,30 +260,110 @@
  */
 .page-content {
   padding: $spacing-unit 0;
+  background: #F7F7F7;
+
+  /* .post {
+    max-width: 600px;
+    margin: 0 auto;
+  } */
+
+  .wrapper > div {
+    padding: $spacing-unit*2;
+    background: #FFF;
+    outline: 1px solid #ededed;
+
+    &.listing-page {
+      padding: 0;
+    }
+  }
 }
 
 .page-heading {
-  font-size: 20px;
+  font-size: .9em;
+  font-weight: 600;
+  line-height: 1;
+  color: $grey-color;
+  letter-spacing: .3px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: $spacing-unit/1.5 $spacing-unit;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: $grey-color;
+  line-height: 25px;
+  vertical-align: middle;
+  margin-top: .75em;
+  display: block;
+}
+
+.post-meta-author {
+  font-weight: bold;
+  color: $green;
+
+  img {
+    border-radius: 24px;
+    vertical-align: middle;
+    margin-right: 0.2em;
+    position: relative;
+    top: -1px;
+  }
 }
 
 .post-list {
   margin-left: 0;
   list-style: none;
 
-  > li {
-    margin-bottom: $spacing-unit;
+  h2 {
+    font-size: 1.6em;
+    margin: 0;
+    line-height: 1.25;
+    font-weight: 600;
   }
-}
 
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
+  > li {
+    padding: $spacing-unit;
+    border-top: 1px solid $grey-color-light;
+
+    a,
+    a:visited {
+      color: $text-color;
+    }
+
+    .post-meta {
+      a,
+      a:visited {
+        color: $brand-purple;
+      }
+    }
+
+    &:hover {
+      background: $brand-purple;
+      color: #FFF;
+
+      .post-meta,
+      .post-meta-author {
+        color: #FFF;
+      }
+
+      a,
+      a:visited {
+        color: #FFF;
+      }
+    }
+  }
 }
 
 .post-link {
   display: block;
-  font-size: 1.2em;
 }
+
+
+/**
+ * Tags
+ */
+.tag-page {}
 
 
 
@@ -267,15 +371,15 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit * 2;
 }
 
 .post-title {
-    font-size: 2.8em;
+    font-size: 3em;
     letter-spacing: -1px;
     line-height: 1.25;
-    margin-bottom: 0.2em;
-    margin-top: 0.2em;
+    margin: 0;
+    font-weight: 600;
 
     @include media-query($on-laptop) {
       font-size: 2.5em;
@@ -310,6 +414,81 @@
     }
 }
 
+.share-cta {
+  line-height: 32px;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+
+  span {
+    vertical-align: middle;
+    line-height: 32px;
+    height: 32px;
+    display: inline-block;
+
+    &.text {
+      margin-left: 0.25em;
+    }
+  }
+
+  a:hover,
+  a:focus {
+    color: $green;
+
+    svg path {
+      fill: $green !important;
+    }
+  }
+}
+
+
+.post-author {
+  @extend %clearfix;
+  margin: $spacing-unit*2 0;
+  padding: $spacing-unit;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+
+  .author-img {
+    float: left;
+    margin-right: $spacing-unit;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+
+  .author-info {
+    margin-left: 100px;
+    padding-left: $spacing-unit;
+
+    h2 {
+      font-weight: 600;
+      color: $green;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0.75em 0 0;
+    }
+
+    .social {
+      a,
+      a:visited {
+        color: $grey-color;
+        font-weight: 600;
+        margin-right: 1em;
+
+        &:hover,
+        &:focus {
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
 #disqus_thread {
-  margin-top: 4em;
+  margin-top: $spacing-unit * 2;
 }

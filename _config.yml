@@ -1,17 +1,33 @@
 # Site settings
-title: CodeStix
-email: matt@codestix.com
+title: Koji Labs Code Blog
+email: hello@kojilabs.com
 description: Quick tips for busy developers
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://codestix.com" # the base hostname & protocol for your site
-twitter_username: codestix
-github_username:  codestix
+url: "http://code.kojilabs.com" # the base hostname & protocol for your site
+twitter_username: kojilabs
+github_username:  kojilabs
 
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
-
-highlighter: pygments
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: nil
 
 permalink: /:title/
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+
+authors:
+  mattwest:
+    name: Matt West
+    display_name: Matt West
+    gravatar: 61695a5d7512d464d38af376b10824b8
+    email: matt.west@kojilabs.com
+    web: http://mattwest.io
+    twitter: mattantwest
+    github: matt-west
+    bio: Founder of Koji Labs, tech entrepreneur, and author of HTML5 Foundations.

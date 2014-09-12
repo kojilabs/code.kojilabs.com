@@ -13,19 +13,21 @@ $base-line-height: 1.5;
 
 $spacing-unit:     2em;
 
-$text-color:       #111;
+$text-color:       #161616;
 $background-color: #FFF;
 $brand-color:      #08C;
+$brand-purple:     #811fab;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color:       #A2A2A2;
+$grey-color-light: #ededed;
 $grey-color-dark:  darken($grey-color, 25%);
 
-$yellow:           #fbe504;
+$green:           #1fab26;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$page-width:       1000px;
 
 
 // Using media queries with like this:
