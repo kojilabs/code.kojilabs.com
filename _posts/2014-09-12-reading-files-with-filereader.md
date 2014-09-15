@@ -2,7 +2,7 @@
 layout: post
 title:  "Reading Files with FileReader"
 author: mattwest
-date:   2014-04-04 12:00:00
+date:   2014-09-12 12:00:00
 tags: JavaScript
 ---
 

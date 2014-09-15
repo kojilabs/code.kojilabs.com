@@ -2,7 +2,7 @@
 layout: post
 title:  "Google Public DNS"
 author: mattwest
-date:   2014-06-03 12:00:00
+date:   2014-09-15 12:00:00
 tags: Tools
 ---
 

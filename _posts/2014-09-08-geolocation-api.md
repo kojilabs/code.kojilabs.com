@@ -2,7 +2,7 @@
 layout: post
 title:  "Geolocation API"
 author: mattwest
-date:   2014-04-01 12:00:00
+date:   2014-09-08 12:00:00
 tags: JavaScript Mobile
 ---
 

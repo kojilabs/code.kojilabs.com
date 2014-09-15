@@ -2,7 +2,7 @@
 layout: post
 title:  "Vibration API"
 author: mattwest
-date:   2014-03-31 12:00:00
+date:   2014-09-03 12:00:00
 tags: JavaScript Mobile
 ---
 
