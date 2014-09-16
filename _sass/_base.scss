@@ -35,10 +35,37 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
+ul {
+  list-style: square;
+}
+
 
 p,
 li {
   line-height: 1.6;
+}
+
+
+table {
+  width: 100%;
+  padding: 0;
+  border-spacing: 0;
+  border-right: 1px solid $grey-color-light;
+  margin: $spacing-unit 0;
+
+  td,
+  th {
+    border-left: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
+    padding: 0.25em;
+  }
+
+  thead {
+    tr {
+      background: $green;
+      color: #FFF;
+    }
+  }
 }
 
 
