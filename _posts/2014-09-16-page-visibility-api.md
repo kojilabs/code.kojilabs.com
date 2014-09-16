@@ -3,7 +3,7 @@ layout: post
 title:  "Working with the Page Visibility API"
 author: mattwest
 date:   2014-09-16 10:50:00
-tags: JavaScript
+tags: JavaScript UX
 ---
 
 These days it's rare for someone to browse the web with just a single tab open. We tend to switch between tabs consuming the information that is most important to us at that moment.
