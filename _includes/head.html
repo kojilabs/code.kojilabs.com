@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}: {{ site.description }}{% endif %}</title>
@@ -8,7 +8,7 @@
 
   <script type="text/javascript" src="//use.typekit.net/tmb1ykw.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  
+
   {% stylesheet main %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

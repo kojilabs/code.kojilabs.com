@@ -110,7 +110,7 @@
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
-        right: 30px;
+        right: $spacing-unit/2;
         background-color: #252525;
         border: 1px solid rgba(255,255,255,0.05);
         border-radius: 3px;
@@ -232,6 +232,10 @@
 }
 
 @include media-query($on-laptop) {
+    .site-footer {
+      padding: $spacing-unit/2;
+    }
+
     .footer-col-1,
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
@@ -260,12 +264,12 @@
   text-align: center;
   /* border-top: 1px solid \$grey-color-light; */
   line-height: 0;
+  padding: $spacing-unit/2;
+  max-width: 100%;
 
-  /* max-width: -webkit-calc(#{\$page-width} - (#{\$spacing-unit} * 2));
-  max-width:         calc(#{\$page-width} - (#{\$spacing-unit} * 2)); */
-
-  margin-top: $spacing-unit;
-  /* margin: 0 auto; */
+  svg {
+    max-width: 100%;
+  }
 
   a {
     display: inline-block;
@@ -280,6 +284,16 @@
       background: #47535b;
     }
   }
+
+  @include media-query($on-palm) {
+    padding: 0;
+    margin-top: 0;
+
+    a {
+      border-bottom: 0;
+      border-radius: 0;
+    }
+  }
 }
 
 
@@ -288,13 +302,8 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit 0 0;
   background: #F7F7F7;
-
-  /* .post {
-    max-width: 600px;
-    margin: 0 auto;
-  } */
 
   .wrapper > div {
     padding: $spacing-unit*2;
@@ -302,7 +311,7 @@
     outline: 1px solid #ededed;
 
     @include media-query($on-palm) {
-      padding: $spacing-unit;
+      padding: $spacing-unit/2;
     }
 
     &.listing-page {
@@ -313,6 +322,7 @@
   @include media-query($on-palm) {
     padding: 0;
   }
+
 }
 
 .page-heading {
@@ -324,6 +334,10 @@
   text-transform: uppercase;
   margin: 0;
   padding: $spacing-unit/1.5 $spacing-unit;
+
+  @include media-query($on-palm) {
+    padding: $spacing-unit/1.5 $spacing-unit/2;
+  }
 }
 
 .post-meta {
@@ -389,6 +403,12 @@
       a:visited {
         color: #FFF;
       }
+    }
+  }
+
+  @include media-query($on-palm) {
+    > li {
+      padding: $spacing-unit/2;
     }
   }
 }
@@ -547,6 +567,28 @@
         &:focus {
           color: $green;
         }
+      }
+    }
+  }
+
+  @include media-query(500px) {
+    padding: $spacing-unit/2;
+
+    .author-img {
+      float: none;
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+
+    .author-info {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .social {
+      a,
+      a:visited {
+        display: block;
       }
     }
   }
