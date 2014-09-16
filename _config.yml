@@ -1,7 +1,7 @@
 # Site settings
 title: Koji Labs Code Blog
 email: hello@kojilabs.com
-description: Quick tips for busy developers
+description: Programming tutorials for web developers
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://code.kojilabs.com" # the base hostname & protocol for your site
 twitter_username: kojilabs
