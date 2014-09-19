@@ -56,19 +56,6 @@ img {
 
 
 /**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
  * Lists
  */
 ul, ol {
@@ -129,6 +116,21 @@ blockquote {
     }
 }
 
+
+
+/**
+ * Figures
+ */
+figure {
+  padding: $spacing-unit;
+  text-align: center;
+
+  figcaption {
+    margin-top: 1em;
+    font-style: italic;
+    font-size: $small-font-size;
+  }
+}
 
 
 /**

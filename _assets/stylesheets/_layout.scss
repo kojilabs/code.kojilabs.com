@@ -527,7 +527,7 @@
 
 .post-author {
   @extend %clearfix;
-  margin: $spacing-unit*2 0;
+  margin: $spacing-unit*2 0 0;
   padding: $spacing-unit;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
@@ -593,6 +593,53 @@
     }
   }
 }
+
+
+#mc_embed_signup {
+  @extend %clearfix;
+  margin: $spacing-unit 0 $spacing-unit*2 0;
+  padding: $spacing-unit;
+  border: 1px solid #f9eede;
+  border-radius: 3px;
+  /* background: #f9eede; */
+  background: #fdf9f3;
+
+  .indicates-required {
+    margin-right: 0;
+  }
+
+  form {
+    padding: 0;
+
+    h2 {
+      font-weight: 600;
+      color: $green;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .mc-field-group {
+      min-height: 0;
+      width: 100%;
+
+      input {
+        border: 1px solid #f9eede;
+        border-radius: 3px;
+        font-size: $base-font-size;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+
+    #mc-embedded-subscribe.btn {
+      @extend .btn;
+      -webkit-font-smoothing: antialiased;
+      border: 2px solid $green;
+      cursor: pointer;
+      background: #FFF;
+    }
+  }
+}
+
 
 #disqus_thread {
   margin-top: $spacing-unit * 2;
